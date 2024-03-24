@@ -1,0 +1,12 @@
+theia@theia-nelsoch:/home/project/final_project$ python3
+Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> emotion_detector("i love this new technology")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/project/final_project/emotion_detection.py", line 12, in emotion_detector
+    emotion = formatted_response['emotionPredictions']['emotion']
+TypeError: list indices must be integers or slices, not str
+>>> 
+#####################################################################
