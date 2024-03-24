@@ -10,3 +10,14 @@ Traceback (most recent call last):
 TypeError: list indices must be integers or slices, not str
 >>> 
 #####################################################################
+>>> emotion_detector("i love this new technology")
+{'{"emotionPredictions":[{"emotion":{"anger":0.0132405795, "disgust":0.0020517302, "fear":0.009090992, "joy":0.9699522, "sadness":0.054984167}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":26, "text":"i love this new technology"}, "emotion":{"anger":0.0132405795, "disgust":0.0020517302, "fear":0.009090992, "joy":0.9699522, "sadness":0.054984167}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}'}
+>>> q
+#####################################################################
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/project/final_project/emotion_detection.py", line 12, in emotion_detector
+    formatted_response = json.loads(response)
+  File "/usr/lib/python3.10/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Response
